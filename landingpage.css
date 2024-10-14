@@ -650,6 +650,10 @@ input:focus {
     .icon-text p{
         font-size: 10px;
     }
+    .footer{
+        margin: 0px;
+        padding: 0px;
+    }
     .footer-container {
         flex-direction: column;
         align-items: flex-start;
