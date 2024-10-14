@@ -1,0 +1,150 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.home-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.home-btn:hover {
+    background-color: #777;
+}
+h1 {
+    font-size: 28px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-options label {
+    color: #333;
+    font-size: 14px;
+}
+
+.login-btn {
+    margin-bottom: 20px;
+}
+
+.login-btn button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn button:hover {
+    background-color: #125ab5;
+}
+
+.alternative-login {
+    margin-top: 20px;
+}
+
+.alternative-login p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.customer-login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #01415b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.customer-login-btn:hover {
+    background-color: #012f45;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .login-btn button, .customer-login-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
