@@ -537,7 +537,7 @@ input:focus {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .landing-page{
-        height: 70vh;
+        height: 80vh;
         padding: 0px 20px;
         width: 100vw;
     }
@@ -649,10 +649,6 @@ input:focus {
     }
     .icon-text p{
         font-size: 10px;
-    }
-    .footer{
-        margin: 0px;
-        padding: 0px;
     }
     .footer-container {
         flex-direction: column;
