@@ -538,7 +538,7 @@ input:focus {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .landing-page{
-        height: 80vh;
+        height: 85vh;
         padding: 0px 20px;
         width: 100vw;
     }
