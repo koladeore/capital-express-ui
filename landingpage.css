@@ -539,8 +539,8 @@ input:focus {
 @media (max-width: 768px) {
     .landing-page{
         height: 85vh;
-        padding: 0px;
-        width: 100%;
+        padding: 0px 20px;
+        width: 100vw;
     }
     .logo img {
         width: 40px;
