@@ -542,6 +542,9 @@ input:focus {
         padding: 0px 20px;
         width: 100vw;
     }
+    header{
+        margin-left: -32px;
+    }
     .logo img {
         width: 40px;
         margin-left: 10px;
