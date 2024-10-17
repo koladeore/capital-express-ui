@@ -102,7 +102,18 @@ body {
 .login-btn:hover {
     background-color: #1557ba;
 }
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+/* Highlight invalid input fields */
+.input-error {
+    border: 2px solid red;
+}
 /* Responsive design */
 @media (max-width: 768px) {
     .login-box {

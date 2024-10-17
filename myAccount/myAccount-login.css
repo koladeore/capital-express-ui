@@ -121,6 +121,17 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+    display: none;
+    margin-bottom: 5px;
+}
+
+.input-error {
+    border: 2px solid red;
+}
 
 @media (max-width: 600px) {
     .login-container {

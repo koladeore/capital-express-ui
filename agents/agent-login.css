@@ -134,6 +134,17 @@ a{
 .customer-login-btn:hover {
     background-color: #012f45;
 }
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Highlight invalid input fields */
+.input-error {
+    border: 2px solid red;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
