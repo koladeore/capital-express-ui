@@ -18,7 +18,7 @@ body {
     width: 100%;
     max-width: 600px;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 350px;
     position: relative;
 }
 .home-btn {
@@ -65,7 +65,9 @@ form {
     display: flex;
     flex-direction: column;
 }
-
+a{
+    text-decoration: none;
+}
 .form-row {
     display: flex;
     justify-content: space-between;
@@ -109,7 +111,6 @@ input:focus, select:focus {
 .phone-input input {
     width: 65%;
 }
-
 .btn {
     width: 100%;
     padding: 12px;

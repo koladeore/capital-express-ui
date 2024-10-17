@@ -21,16 +21,16 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="./agent-login.html" class="slide-in-nav">I am an Agent</a></li>
-                        <li><a href="./myAccount-login.html" class="slide-in-nav">My Account</a></li>
-                        <li><a href="./register.html" class="slide-in-nav">Register</a></li>
-                        <li><a href="./adminPortal-login.html" class="slide-in-nav">Admin Portal</a></li>
+                        <li><a href="./agents/agent-login.html" class="slide-in-nav">I am an Agent</a></li>
+                        <li><a href="./myAccount/myAccount-login.html" class="slide-in-nav">My Account</a></li>
+                        <li><a href="./register/register.html" class="slide-in-nav">Register</a></li>
+                        <li><a href="./adminPortal/adminPortal-login.html" class="slide-in-nav">Admin Portal</a></li>
                     </ul>
                     <ul class="ul-mobile">
-                        <li><a href="./agent-login.html" class="slide-in-nav">Agent</a></li>
-                        <li><a href="./myAccount-login.html" class="slide-in-nav">Account</a></li>
-                        <li><a href="./register.html" class="slide-in-nav">Register</a></li>
-                        <li><a href="./adminPortal-login.html" class="slide-in-nav">Admin</a></li>
+                        <li><a href="./agents/agent-login.html" class="slide-in-nav">Agent</a></li>
+                        <li><a href="./myAccount/myAccount-login.html" class="slide-in-nav">Account</a></li>
+                        <li><a href="./register/register.html" class="slide-in-nav">Register</a></li>
+                        <li><a href="./adminPortal/adminPortal-login.html" class="slide-in-nav">Admin</a></li>
                     </ul>
                 </nav>
             </header>
@@ -38,10 +38,9 @@
             <!-- Main section with text, buttons, and image -->
             <div class="main-content">
                 <div class="text-and-buttons">
-                    <h1 class="slide-up-text">Find the Best Car Insurance & Deals</h1>
+                    <h1 class="slide-up-text">Get Reliable Third-Party Car Insurance & Protection</h1>
                     <p class="slide-up-text">
-                        Secure your future with our best car insurance plans and buy your dream car
-                        from our collection.
+                        Safeguard your financial future with our trusted third-party car insurance, offering peace of mind and essential coverage for every journey.
                     </p>
                     <div class="buttons">
                         <a href="#" class="btn zoom-in-btn">Buy with Scratch Card</a>
@@ -67,11 +66,50 @@
                 </div>
                 <div class="input-group3">
                     <input type="text" placeholder="e.g CP/PP/0000/00000PM0 or KFF" />
-                    <button class="btn">Reprint Cert</button>
+                    <button class="btn">Start Renewal (Scratch Card)</button>
                 </div>
             </div>
             <div class="policy-group-right">
-                <button class="btn">Retrieve Policy Details</button>
+                <button class="btn" id="openModalBtn">Retrieve Policy Details with EPIN</button>
+                <button class="btn second" id="brownCardBtn">Need your BrownCard Download Here</button>
+            </div>
+        </div>
+        <!-- modal policyModal -->
+        <div id="policyModal" class="modal">
+            <div class="modal-content">
+                <h2>Retrieve Code with PIN</h2>
+                <div class="modal-retrieve">
+                    <label for="pin">Pin:</label>
+                    <input type="password" id="pin" name="pin" placeholder="Enter your PIN">
+                    <label for="insuranceType">Insurance Type:</label>
+                    <select id="insuranceType" name="insuranceType">
+                        <option value="">Select Insurance Type</option>
+                        <option value="comprehensive">CVO</option>
+                        <option value="third-party">MCO</option>
+                        <option value="third-party">PMO</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+        
+                <div class="modal-actions">
+                    <button class="btn closeModalBtn">Close</button>
+                    <button class="btn retrieveBtn">Retrieve</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal for BrownCard download -->
+        <div id="brownCardModal" class="modal">
+            <div class="modal-content">
+                <h2>BrownCard Download</h2>
+                <div class="modal-browncard">
+                    <label for="registrationNumber">Registration Number:</label>
+                    <input type="text" id="registrationNumber" name="registrationNumber" placeholder="Enter your Registration Number">
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn closeBrownCardModal">Close</button>
+                    <button class="btn downloadBrownCardBtn">Download BrownCard</button>
+                </div>
             </div>
         </div>
         <section class="pricing-section">
@@ -79,10 +117,26 @@
             <div class="pricing-cards">
                 <!-- First card: MOTORCYCLE -->
                 <div class="pricing-card-content">
-                    <img src="./images/motortricycle.png" alt="Motorcycle Image">
+                    <img src="./images/bike2.jpeg" alt="Motorcycle Image">
+                    <h3>₦3,000</h3>
+                    <h4>MOTORCYCLE</h4>
+                    <p>MotorCycles</p>
+                    <ul>
+                        <li>24/7 support</li>
+                        <li>Renewable Policy</li>
+                        <li>Prompt Claims Settlement</li>
+                    </ul>
+                    <div class="card-buttons">
+                        <a href="#" class="btn">Buy Now</a>
+                        <a href="#" class="btn quick-buy-btn">Quick Buy</a>
+                    </div>
+                </div>
+                <!-- First card: TRICYCLE -->
+                <div class="pricing-card-content">
+                    <img src="./images/tricycle1.jpeg" alt="Motorcycle Image">
                     <h3>₦5,000</h3>
-                    <h4>MOTORCYCLE (MCO)</h4>
-                    <p>MotorCycles and Tricycles</p>
+                    <h4>TRICYCLE</h4>
+                    <p>Tricycles</p>
                     <ul>
                         <li>24/7 support</li>
                         <li>Renewable Policy</li>
@@ -95,9 +149,9 @@
                 </div>
                 <!-- Second card: PRIVATE -->
                 <div class="pricing-card-content">
-                    <img src="./images/img3.jpg" alt="Private Car Image">
+                    <img src="./images/img2.jpg" alt="Private Car Image">
                     <h3>₦15,000</h3>
-                    <h4>PRIVATE (PMO)</h4>
+                    <h4>PRIVATE</h4>
                     <p>Private cars only</p>
                     <ul>
                         <li>24/7 support</li>
@@ -111,9 +165,9 @@
                 </div>
                 <!-- Third card: COMMERCIAL -->
                 <div class="pricing-card-content">
-                    <img src="./images/img2.jpg" alt="Commercial Vehicle Image">
+                    <img src="./images/dafo2.jpeg" alt="Commercial Vehicle Image">
                     <h3>₦20,000</h3>
-                    <h4>COMMERCIAL (CVO)</h4>
+                    <h4>COMMERCIAL</h4>
                     <p>Excludes trucks, tankers, and luxurious buses</p>
                     <ul>
                         <li>24/7 support</li>
@@ -208,7 +262,7 @@
             </div>
         </footer>        
     </div>
-
+<script src="./landingpage.js"></script>
 </body>
 
 </html>
