@@ -58,29 +58,20 @@
                         </select>
                         <div class="error" id="localGovernmentError">Local Government is required</div>
                     </div>
-                </div>
-            
+                </div>  
                 <!-- Row 3: Date of Birth -->
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group date-of-birth">
                         <label for="birthDate">Date of Birth</label>
                         <input type="date" id="birthDate">
                         <div class="error" id="birthDateError">Date of Birth is required</div>
                     </div>
-                </div>
-            
-                <!-- Row 4: Phone Number -->
-                <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group phone-number">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" class="tel-input" pattern="^[0-9]+$" name="phone" placeholder="Enter phone number">
                         <div class="error" id="phoneError">Valid Phone Number is required</div>
                     </div>
-                </div>
-            
-                <!-- Row 5: Gender -->
-                <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group gender">
                         <label for="gender">Gender</label>
                         <select id="gender">
                             <option value="" disabled selected>Select Gender</option>
@@ -90,12 +81,11 @@
                         <div class="error" id="genderError">Gender is required</div>
                     </div>
                 </div>
-            
                 <!-- Row 6: Address -->
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group address">
                         <label for="address">Address</label>
-                        <textarea id="address" cols="40" rows="4" class="textarea"></textarea>
+                        <textarea id="address" cols="65" rows="6" class="textarea"></textarea>
                         <div class="error" id="addressError">Address is required</div>
                     </div>
                 </div>

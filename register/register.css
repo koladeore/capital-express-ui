@@ -76,7 +76,6 @@ a{
     justify-content: space-between;
     margin-bottom: 15px;
 }
-
 .form-group {
     width: 48%;
 }
@@ -100,18 +99,17 @@ input:focus, select:focus {
     border-color: #1a73e8;
     outline: none;
 }
-
-.phone-input {
-    display: flex;
+.date-of-birth{
+    width: 25%;
 }
-
-.phone-input select {
+.phone-number {
+    width: 40%;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.gender{
     width: 35%;
-    border-right: none;
-}
-
-.phone-input input {
-    width: 65%;
+    margin-left: 5px;
 }
 .btn {
     width: 100%;
@@ -129,23 +127,12 @@ input:focus, select:focus {
 .btn:hover {
     background-color: #155bc1;
 }
-.phone-input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .country-code {
     width: 25%;
     padding: 8px;
     font-size: 16px;
     min-width: 100px;
-}
-.phone-number {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    margin-left: 10px;
-    min-width: 300px;
 }
 .remember-me-group {
     display: flex;
